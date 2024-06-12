@@ -1,0 +1,17 @@
+name = "app"
+version = "1.0.0"
+
+[dependencies]
+common = { path = "../common" }
+gleam_stdlib = ">= 0.34.0 and < 2.0.0"
+mist = ">= 1.2.0 and < 2.0.0"
+wisp = ">= 0.15.0 and < 1.0.0"
+lustre = ">= 4.2.5 and < 5.0.0"
+lustre_ui = ">= 0.6.0 and < 1.0.0"
+gleam_erlang = ">= 0.25.0 and < 1.0.0"
+gleam_otp = ">= 0.10.0 and < 1.0.0"
+gleam_json = ">= 1.0.1 and < 2.0.0"
+gleam_http = ">= 3.6.0 and < 4.0.0"
+
+[dev-dependencies]
+gleeunit = ">= 1.0.0 and < 2.0.0"
