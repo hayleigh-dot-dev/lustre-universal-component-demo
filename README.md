@@ -11,8 +11,11 @@ code.
 This project showcases how that works. The `common/` directory contains a Lustre
 application for a simple counter example. **All** the Lustre application logic
 lives here, and is agnostic to the platform it runs on. This counter application
-has been exported as a custom element using Lustre's dev tools and saved in
-`server/priv/counter.mjs`.
+is exported as a custom element using Lustre's dev tools and saved as
+`server/priv/static/counter.mjs` by running:
+```
+gleam clean && gleam run -m lustre/dev build component common/counter --outdir=../server/priv/static
+```
 
 The `client/` directory takes that counter application and runs it as a typical
 client-side web application. The code in this directory is only responsible for
